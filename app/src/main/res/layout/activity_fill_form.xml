@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillFormActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etMountain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:inputType="text"
+        android:text="Mountain"
+
+        />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:inputType="text"
+        android:text="Location"
+        />
+
+    <EditText
+        android:id="@+id/etRouteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Route name"
+      />
+
+    <EditText
+        android:id="@+id/etNumHeight"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/etRouteGrade"
+        android:layout_width="125dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Grade"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:text="Description"
+        />
+
+    <Button
+        android:id="@+id/btnUploadRoutePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload picture"
+        />
+
+    <Button
+        android:id="@+id/btnSubmitForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        />
+
+</LinearLayout>
