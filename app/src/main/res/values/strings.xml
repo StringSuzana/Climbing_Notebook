@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">climbingnotebook</string>
     <string name="please_wait">Please wait</string>
+    <string name="errorMsg_insert_text">Insert text here</string>
+    <string name="details">Details</string>
+    <string name="my_climbed_routes">My climbed routes</string>
+    <string name="hint_mountain">Biokovo, Paklenica...</string>
+    <string name="hint_location">Ovčji kuk, Brela..</string>
+    <string name="hint_route_name">Velebitaški, Sive jeze..</string>
 </resources>

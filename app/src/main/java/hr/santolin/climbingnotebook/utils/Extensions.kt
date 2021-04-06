@@ -9,7 +9,6 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.preference.PreferenceManager
-import hr.santolin.climbingnotebook.R
 
 fun View.applyAnimation(animId:Int) {
         this.startAnimation(AnimationUtils.loadAnimation(context, animId))

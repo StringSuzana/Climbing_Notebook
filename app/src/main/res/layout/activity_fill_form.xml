@@ -1,63 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="20dp"
     android:layout_height="match_parent"
     tools:context=".FillFormActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tvMountain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mountain"
+        android:layout_marginTop="20dp"
+        />
     <EditText
+
         android:id="@+id/etMountain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:gravity="top"
         android:inputType="text"
-        android:text="Mountain"
+        android:hint="@string/hint_mountain"
 
         />
-
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginTop="20dp"
+        />
     <EditText
         android:id="@+id/etLocation"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:gravity="top"
         android:inputType="text"
-        android:text="Location"
+        android:hint="@string/hint_location"
         />
-
+    <TextView
+        android:id="@+id/tvRouteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route name"
+        android:layout_marginTop="20dp"
+        />
     <EditText
         android:id="@+id/etRouteName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="text"
-        android:text="Route name"
+        android:hint="@string/hint_route_name"
       />
-
+    <TextView
+        android:id="@+id/tvNumHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route Height"
+        android:layout_marginTop="20dp"
+        />
     <EditText
         android:id="@+id/etNumHeight"
-        android:layout_width="113dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:ems="10"
         android:inputType="number"
-        />
+        android:hint="Route height in meters"
 
+        />
+    <TextView
+        android:id="@+id/tvRouteGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:layout_marginTop="20dp"
+        />
     <EditText
         android:id="@+id/etRouteGrade"
         android:layout_width="125dp"
         android:layout_height="37dp"
-        android:ems="10"
         android:inputType="text"
-        android:text="Grade"/>
+        android:hint="6a+, VI ..."/>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbIsMultipitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
+        android:text="Is Multipitch"
         />
 
     <TextView
@@ -75,28 +110,42 @@
         android:inputType="date"
         />
 
+<TextView
+    android:id="@+id/tvDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Description"
+    android:layout_marginTop="20dp"
+
+    />
     <EditText
         android:id="@+id/etDescription"
-        android:layout_width="320dp"
+        android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:ems="10"
         android:gravity="start|top"
         android:inputType="text"
-        android:text="Description"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btnUploadRoutePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload picture"
-        />
+        <Button
+            android:id="@+id/btnUploadRoutePicture"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text="Upload picture" />
 
-    <Button
+        <Button
         android:id="@+id/btnSubmitForm"
-        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Save"
-        />
+        android:text="Save" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
+</ScrollView>

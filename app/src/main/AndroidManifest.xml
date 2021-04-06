@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Climbingnotebook">
-        <activity android:name=".FillFormActivity"></activity>
+        <activity android:name=".FillFormActivity" />
         <activity android:name=".ClimbedActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>

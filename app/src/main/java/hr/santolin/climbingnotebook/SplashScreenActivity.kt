@@ -1,11 +1,10 @@
 package hr.santolin.climbingnotebook
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.animation.AnimationUtils
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import hr.santolin.climbingnotebook.utils.*
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
@@ -24,7 +23,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setBooleanPreference(DATA_IMPORTED,true)
         if(getBooleanPreference(DATA_IMPORTED)){
             Handler(Looper.getMainLooper()).postDelayed({
-                startActivity<ClimbedActivity>()
+                startActivity<FillFormActivity>()
             }, DELAY)
         }else{
             if(isOnline()){

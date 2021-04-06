@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/light_slate_gray"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <!--zašto moram to specificirat  android:orientation="vertical"?-->
+<TextView
+    android:id="@+id/tvClimbedDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/listTextSize"
+    ></TextView>
+    <TextView
+        android:id="@+id/tvGradeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/listTextSize"
+        ></TextView>
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details"
+        android:textSize="@dimen/btnTextSize"
+        android:backgroundTint="@color/material_on_primary_disabled"
+        ></Button>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
