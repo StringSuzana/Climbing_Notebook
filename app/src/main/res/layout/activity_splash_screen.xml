@@ -9,18 +9,10 @@
     >
 
 
-    <TextView
-        android:id="@+id/tvSplash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="top"
-        android:text="@string/please_wait"
-        android:textColor="@android:color/holo_blue_dark" />
-
     <ImageView
         android:id="@+id/ivSplash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/mountainforanim" />
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/colorfull_mountains" />
 </LinearLayout>

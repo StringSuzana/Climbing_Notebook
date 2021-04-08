@@ -65,14 +65,15 @@ class FillFormActivity : AppCompatActivity() {
     }*/
 
     private fun formValid(): Boolean {
+        var valid:Boolean = true
         validationFields.forEach {
             if (it.text.toString().isBlank()) {
                 it.error = getString(R.string.errorMsg_insert_text)
                 it.requestFocus()
-                false
+                valid = false
             }
         }
-        return true
+        return valid
     }
 
     //ivNekaSlika.setImageDrawable(null) makni sliku

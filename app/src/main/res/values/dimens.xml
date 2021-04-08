@@ -2,6 +2,6 @@
 <resources>
     <dimen name="splash_textSize">90sp</dimen>
     <dimen name="padding_climbed">10dp</dimen>
-    <dimen name="listTextSize">20sp</dimen>
+    <dimen name="listTextSize">17sp</dimen>
     <dimen name="btnTextSize">15dp</dimen>
 </resources>

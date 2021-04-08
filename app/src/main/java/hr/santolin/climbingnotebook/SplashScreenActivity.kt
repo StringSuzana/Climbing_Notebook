@@ -9,7 +9,7 @@ import hr.santolin.climbingnotebook.utils.*
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 private const val DATA_IMPORTED ="hr.santolin.climbingnotebook.DATA_IMPORTED"
-private const val DELAY =1500L
+private const val DELAY =2500L
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setBooleanPreference(DATA_IMPORTED,true)
         if(getBooleanPreference(DATA_IMPORTED)){
             Handler(Looper.getMainLooper()).postDelayed({
-                startActivity<FillFormActivity>()
+                startActivity<ClimbedActivity>()
             }, DELAY)
         }else{
             if(isOnline()){
@@ -37,7 +37,7 @@ class SplashScreenActivity : AppCompatActivity() {
     }
 
     private fun startAnimations() {
-        //ivSplash.applyAnimation(R.anim.blink)
-        tvSplash.applyAnimation(R.anim.blink)
+        ivSplash.applyAnimation(R.anim.right_to_left)
+        //tvSplash.applyAnimation(R.anim.blink)
     }
 }
