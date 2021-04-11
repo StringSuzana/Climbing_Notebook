@@ -1,15 +1,18 @@
 package hr.santolin.climbingnotebook
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
 import hr.santolin.climbingnotebook.entities.ClimbedEntryEntity
 import hr.santolin.climbingnotebook.utils.applyAnimation
+import kotlinx.android.synthetic.main.activity_fill_form.*
 
 
 class ClimbedAdapter(private val items: MutableList<ClimbedEntryEntity>) :
@@ -44,9 +47,28 @@ class ClimbedAdapter(private val items: MutableList<ClimbedEntryEntity>) :
             notifyDataSetChanged()
             true
         }*/
+        setUpListeners(holder, position)
         holder.bind(items[position])
-        setAnimation(holder.itemView, position);
+        setAnimation(holder.itemView, position)
     }
+
+    private fun setUpListeners(holder: ViewHolder, position: Int) {
+        holder.itemView.setOnClickListener {
+            val fragment: Fragment =  ClimbedDetailsFragment.newInstance(
+                items[position].routeName,
+                items[position].mountain
+            )
+
+            val ft: FragmentTransaction =
+                (it.context as FragmentActivity).supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flDetailsFragment, fragment)
+                    addToBackStack(null)
+                    commit()
+                }
+            //fragment.view?.setBackgroundResource(R.drawable.purple_mountain)
+        }
+    }
+
     private var lastPosition = -1
 
     private fun setAnimation(itemView: View, position: Int) {

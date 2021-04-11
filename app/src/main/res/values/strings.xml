@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">climbingnotebook</string>
+    <string name="app_name">Climbing notebook</string>
     <string name="please_wait">Please wait</string>
     <string name="errorMsg_insert_text">Insert text here</string>
     <string name="details">Details</string>
@@ -7,4 +7,17 @@
     <string name="hint_mountain">Biokovo, Paklenica...</string>
     <string name="hint_location">Ovčji kuk, Brela..</string>
     <string name="hint_route_name">Velebitaški, Sive jeze..</string>
+    <string name="mountain">Mountain</string>
+    <string name="location">Location</string>
+    <string name="route_height">Route Height</string>
+    <string name="route_height_in_meters">Route height in meters</string>
+    <string name="grade">Grade</string>
+    <string name="grade_example">6a+, VI ...</string>
+    <string name="is_multipitch">Is Multipitch</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="route_name">Route name</string>
 </resources>

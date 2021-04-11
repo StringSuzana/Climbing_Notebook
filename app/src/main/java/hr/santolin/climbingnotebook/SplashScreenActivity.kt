@@ -15,8 +15,6 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        startAnimations()
-        redirect()
     }
 
     private fun redirect() {
@@ -39,5 +37,11 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun startAnimations() {
         ivSplash.applyAnimation(R.anim.right_to_left)
         //tvSplash.applyAnimation(R.anim.blink)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        startAnimations()
+        redirect()
     }
 }

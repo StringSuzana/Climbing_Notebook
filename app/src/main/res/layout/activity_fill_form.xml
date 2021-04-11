@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
     android:padding="20dp"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".FillFormActivity"
     android:orientation="vertical">
 
@@ -15,7 +15,7 @@
         android:id="@+id/tvMountain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mountain"
+        android:text="@string/mountain"
         android:layout_marginTop="20dp"
         />
     <EditText
@@ -33,7 +33,7 @@
         android:id="@+id/tvLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Location"
+        android:text="@string/location"
         android:layout_marginTop="20dp"
         />
     <EditText
@@ -63,7 +63,7 @@
         android:id="@+id/tvNumHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Route Height"
+        android:text="@string/route_height"
         android:layout_marginTop="20dp"
         />
     <EditText
@@ -71,35 +71,35 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:inputType="number"
-        android:hint="Route height in meters"
+        android:hint="@string/route_height_in_meters"
 
         />
+
     <TextView
         android:id="@+id/tvRouteGrade"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Grade"
+        android:layout_height="29dp"
         android:layout_marginTop="20dp"
-        />
+        android:text="@string/grade" />
     <EditText
         android:id="@+id/etRouteGrade"
         android:layout_width="125dp"
         android:layout_height="37dp"
         android:inputType="text"
-        android:hint="6a+, VI ..."/>
+        android:hint="@string/grade_example"/>
 
     <CheckBox
         android:id="@+id/cbIsMultipitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Is Multipitch"
+        android:text="@string/is_multipitch"
         />
 
     <TextView
         android:id="@+id/tvDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date"
+        android:text="@string/date"
         />
 
     <EditText
@@ -114,7 +114,7 @@
     android:id="@+id/tvDescription"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Description"
+    android:text="@string/description"
     android:layout_marginTop="20dp"
 
     />
@@ -143,7 +143,8 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Save" />
+            android:background="@drawable/btn_details_style"
+        android:text="@string/save" />
 
     </LinearLayout>
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="splash_textSize">90sp</dimen>
-    <dimen name="padding_climbed">10dp</dimen>
     <dimen name="listTextSize">17sp</dimen>
-    <dimen name="btnTextSize">15dp</dimen>
+    <dimen name="btnTextSize">15sp</dimen>
+
+    <dimen name="padding_climbed">10dp</dimen>
 </resources>

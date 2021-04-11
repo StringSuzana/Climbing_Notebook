@@ -5,19 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ClimbedActivity">
-    <TextView
-        android:id="@+id/tvClimbed"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_gravity="top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/my_climbed_routes" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="60dp"/>
+    <FrameLayout
+        android:id="@+id/flDetailsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
